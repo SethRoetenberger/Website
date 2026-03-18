@@ -1,3 +1,17 @@
+/*Colors*/
+:root {
+  --c-white: hsl(0, 0%, 100%);
+  --c-gray-dark: hsl(233, 14%, 25%);
+  --c-purple: hsl(232, 58%, 55%);
+  --c-transparent: transparent;
+
+  --color-main-bg: var(--c-white);
+  --color-text-dark: var(--c-gray-dark);
+  --color-text-light: var(--c-white);
+  --color-hero-bg: var(--c-purple);
+  --color-transparant: var(--c-transparent);
+}
+
 *,
 *::before,
 *::after {
@@ -17,4 +31,74 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+}
+
+.wrapper {
+  width: min(calc(100%-48px), calc(1200 / 16 * 1rem));
+  margin-inline: auto;
+}
+
+.bannertop {
+  width: min(calc(100%-48px), calc(1200 / 16 * 1rem));
+  height: 300px;
+  margin-inline: auto;
+  background-color: rgb(57, 64, 75);
+}
+.bannerbottom {
+  width: min(calc(100%-48px), calc(1200 / 16 * 1rem));
+  height: 100px;
+  margin-inline: auto;
+  background-color: rgb(57, 64, 75);
+}
+.center_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+  height: 128px;
+}
+.centered_title {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 300%;
+  color: rgb(255, 255, 255);
+}
+.image_float {
+  float: left;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.wrapperthin {
+  clear: both;
+  margin: 5%;
+  width: 80%;
+  /*width: min(calc(100%-48px), calc(1200 / 16 * 1rem));*/
+  margin-inline: auto;
+}
+/* If viewport width is 600px or less, set width to 95% */
+@media screen and (max-width: 600px) {
+  .wrapperthin {
+    width: 95%;
+  }
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
+.photo-gallery {
+  margin-top: 5%;
+  display: flex;
+  gap: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

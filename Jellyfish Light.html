@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jellyfish Lights</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body style="background-color: rgb(255, 255, 255)">
+    <div class="bannertop">
+      <div class="centered_title"><h1>Jellyfish Lights</h1></div>
+    </div>
+    <div class="wrapperthin">
+      <img src="Images/JellyfishLight/jellyfish0.jpg" class="image_float" />
+
+      <p style="color: rgb(0, 0, 0)">
+        I began working on this light by modeling it in Fusion 360. There are
+        multiple organic parts to the model, so it was a challenge to design it
+        for 3D printing. I also designed the internals to accept a battery pack
+        to keep the jellyfish wireless. To do this, I created a battery holder
+        that slid into the bottom and twisted and locked into place to securely
+        hold the batteries. To make the outer shell and tentacles of the
+        jellyfish, I printed them out of a clear TPU. This allowed them to be
+        flexible and see-through. I heated up and bent the tips of the tentacles
+        so that they could be clamped to the body. Once the modeling of the
+        assembly was finished, I moved on to the electronics. I used an ESP32
+        and a voltage regulator to properly control the lights. I then created
+        two more jellyfish. After a couple of uses, it became clear that the
+        batteries did not have enough amp hours to drive the LEDS for a long
+        period of time. I had done the calculations on this, but it did not
+        match up with reality. <br /><br />To solve this new issue, I decided to
+        make the jellyfish wired. The batteries were removed, and I made a
+        hanging device for all 3 jellyfish to connect to which included a touch
+        sensor imbedded in the wood. I simplified the electronics so that only
+        one ESP32 was required and each jellyfish used one output pin.<br /><br />
+      </p>
+    </div>
+
+    <div class="wrapperthin">
+      <div class="photo-gallery">
+        <div class="column">
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish1.png" />
+          </div>
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish5.png" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish2.png" />
+          </div>
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish4.png" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish3.png" />
+          </div>
+          <div class="photo">
+            <img src="Images/JellyfishLight/jellyfish6.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
